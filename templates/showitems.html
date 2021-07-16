@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Items List</title>
+</head>
+<body style="background-color:pink">
+<body>
+<h1>This is your items list: </h1>
+</br>
+<table border="5">
+    <tr><th>Unit</th><th>Details</th></tr>
+    {% for x, y in result.items(): %}
+    <tr>
+        <td>{{x}}</td><td>{{y}}</td>
+    {%endfor%}
+</table>
+</body>
+</html>
